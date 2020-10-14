@@ -1,0 +1,47 @@
+main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 35%;
+	margin: auto;
+}
+
+main input {
+	width: 80%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+main textarea {
+	width: 80%;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	height: 200px;
+	resize: none;
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main button {
+	height: 50px;
+	width: 115px;
+}
+
+main button:hover {
+	cursor: pointer;
+}
