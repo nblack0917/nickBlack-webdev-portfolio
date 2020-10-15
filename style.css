@@ -3,6 +3,9 @@
 	padding: 0;
 }
 
+/* Updated .nav rules */
+/* Copy from here... */
+
 .nav {
     width: 100%;
     height: 75px;
@@ -56,6 +59,9 @@
 	transform: rotate(45deg) translate(-8px, -8px);
   }
 
+
+/* ...to here */
+
 main {
 	height: 500px
 }
@@ -86,6 +92,9 @@ footer {
 	margin: 0 10px;
 	background-color: white;
 }
+
+/* responsive rules for hamburger button */
+/* Copy all */
 
 @media screen and (max-width: 699px) {
 	.nav-block a {
