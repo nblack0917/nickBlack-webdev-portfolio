@@ -7,15 +7,9 @@ function myFunction() {
 
     if (x.className === "nav-block") {
         x.className += " responsive";
-        console.log(y)
-        console.log(x)
-        console.log(z)
         z.className += " responsive";
     } else {
         x.className = "nav-block";
         z.className = "nav";
-        console.log(y)
-        console.log(x)
-        console.log(z)
     }
 }
