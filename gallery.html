@@ -3,69 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="gallery-style.css">
-    <title>Gallery</title>
+    <script src="script.js"></script>
+    <title>Portfolio Gallery</title>
 </head>
 <body>
-  <div class="nav">
-        <a href="index.html" class="nav-icon"><img src="./placeholder-50x50.jpg" alt=""></a>
-        <div class="nav-block">
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
+    <div class="nav" id="navbar">
+        <div class="header-icon">
+            <a href="index.html" class="nav-icon"><img src="./Images/nb_mono.svg" alt=""></a>
+            <div class="shadow"></div>
+        </div>
+        <div class="nav-block" id="myTopNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="line-container" id="lineContainer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                  <div class="nav-links" id="midNav">
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
         </div>
     </div>
     <main>
-        <section class="gallery-container">
-            <div class="gallery-box">
-                <div class="gallery-title"><h1>Project Gallery</h1></div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
-                <div class="gallery-item">
-                    <img src="./placeholder-200x200.jpg" alt="project thumbnail">
-                    <h2>Project Title</h2>
-                </div>
+    <section class="gallery-container">
+        <div class="gallery-box">
+            <div class="gallery-title"><h1>Completed and In-Process Projects</h1></div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/ACA-nick-black-portfolio/index.html" target="_blank">
+                    <img src="./Images/portfolio_thumb.jpg" alt="project thumbnail">
+                    <h2>First Portfolio</h2>
+                </a>
             </div>
-        </section>
-    </main>
-    <footer>
-			<div class="copyright">
-				<p>© 2032 by Austin Coding Academy 2020</p>
-			</div>
-			<div class="footer-buttons">
-				<img class="social-button" src="#">
-				<img class="social-button" src="#">
-				<img class="social-button" src="#">
-				<img class="social-button" src="#">
-			</div>
-		</footer>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/ACA-nick-black-portfolio/resume/resume.html" target="_blank">
+                    <img src="./Images/resume_thumb.jpg" alt="project thumbnail">
+                    <h2>Resume Layout</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/ACA-nick-black-portfolio/contact/contact.html" target="_blank">
+                    <img src="./Images/contact_thumb.jpg" alt="project thumbnail">
+                    <h2>Contact Page</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/ACA-nblack-nasa/" target="_blank">
+                    <img src="./Images/nasa_thumb.jpg" alt="project thumbnail">
+                    <h2>Nasa Contact Page</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/First-Responsive-Website/" target="_blank">
+                    <img src="./Images/response_thumb.jpg" alt="project thumbnail">
+                    <h2>Responsive Page</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/multiplication_table/" target="_blank">
+                    <img src="./Images/multiply_thumb.jpg" alt="project thumbnail">
+                    <h2>Multiplication Table</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/TicTacToe-101/" target="_blank">
+                    <img src="./Images/tictactoe_thumb.jpg" alt="project thumbnail">
+                    <h2>Tic Tac Toe</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/calculator-app-101/" target="_blank">
+                    <img src="./Images/calculator_thumb.jpg" alt="project thumbnail">
+                    <h2>Calculator App</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/ACA-nick-black-portfolio/image-gallery-page/image-gallery.html" target="_blank">
+                    <img src="./Images/gallery_thumb.jpg" alt="project thumbnail">
+                    <h2>Responsive Image Gallery</h2>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://nblack0917.github.io/hairSalonWebsite/" target="_blank">
+                    <img src="./Images/side_door_thumb.jpg" alt="project thumbnail">
+                    <h2>Barbershop Site</h2>
+                </a>
+            </div>
+        
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="copyright">
+        <p>© 2032 by Austin Coding Academy 2020</p>
+    </div>
+    <div class="footer-buttons">
+        <a href="https://www.linkedin.com/in/nick-black-24000a1b7/" target="_blank"><img class="social-button" src="./Images/linkedin_logo.svg"></a>
+        <a href="https://www.instagram.com/nickablack/" target="_blank"><img class="social-button" src="./Images/instagram_logo.svg"></a>
+        <a href="https://www.pinterest.com/nickablack/" target="_blank"><img class="social-button" src="./Images/pinterest_logo.svg"></a>
+    </div>
+</footer>
 </body>
 </html>

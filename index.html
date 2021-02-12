@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <!-- Updated nav bar with onclick and new ids -->
-    <!-- copy opening div and first anchor item with function -->
     <div class="nav" id="navbar">
-        <a href="index.html" class="nav-icon" ><img src="./placeholder-50x50.jpg" alt=""></a>
+        <div class="header-icon">
+            <a href="index.html" class="nav-icon"><img src="./Images/nb_mono.svg" alt=""></a>
+            <div class="shadow"></div>
+        </div>
         <div class="nav-block" id="myTopNav">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <div class="line-container" id="lineContainer">
@@ -19,24 +22,31 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                   </div>
-            </a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
+            <div class="nav-links" id="midNav">
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </div>
     </div>
-    <main></main>
+    <section class="main-container">
+        <img src="./Images/landing_main_2.jpg" alt="A trail in the woods">
+        <div class="name-title">
+            <h1>Nick Black</h1>
+            <h2>Web Developer</h2>
+        </div>
+    </section>
+
     <footer>
-			<div class="copyright">
-				<p>© 2032 by Austin Coding Academy 2020</p>
-			</div>
-			<div class="footer-buttons">
-				<img class="social-button" src="#">
-				<img class="social-button" src="#">
-				<img class="social-button" src="#">
-				<img class="social-button" src="#">
-			</div>
-		</footer>
+        <div class="copyright">
+            <p>© 2032 by Austin Coding Academy 2020</p>
+        </div>
+        <div class="footer-buttons">
+            <a href="https://www.linkedin.com/in/nick-black-24000a1b7/" target="_blank"><img class="social-button" src="./Images/linkedin_logo.svg"></a>
+            <a href="https://www.instagram.com/nickablack/" target="_blank"><img class="social-button" src="./Images/instagram_logo.svg"></a>
+            <a href="https://www.pinterest.com/nickablack/" target="_blank"><img class="social-button" src="./Images/pinterest_logo.svg"></a>
+        </div>
+	</footer>
 </body>
 </html>
