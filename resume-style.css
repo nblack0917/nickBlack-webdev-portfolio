@@ -1,9 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Jost:wght@400;700&display=swap");
+
+/* font-family: 'Cabin', sans-serif; */
+/* font-family: 'Jost', sans-serif; */
+
+p {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  color: rgb(46, 64, 102);
+}
+
+.section-heading-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.section-heading {
+  color: rgb(46, 64, 102);
+  font-family: "Jost", sans-serif;
+  padding-left: 20px;
+}
 
 .resume-container {
   display: grid;
-  grid-template-columns: 215px 50px 1fr;
-  grid-template-rows: 215px 215px 1fr;
+  grid-template-columns: 325px 25px 1fr;
+  grid-template-rows: 215px 175px 1fr;
   width: 1000px;
   margin: 40px auto 0;
   transform: skewY(7deg);
@@ -14,13 +36,15 @@
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+  height: 125px;
 }
 
 .resume-portrait {
-  width: 211px;
-  border-radius: 10px;
-  border: 2px solid black;
+  margin-top: 25px;
+  width: 175px;
+  border-radius: 50%;
+  border: 4px solid rgb(189, 205, 234);
 }
 
 .name-job {
@@ -28,23 +52,41 @@
   grid-column-start: 3;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background: rgb(46, 64, 102);
+  text-align: center;
+  margin: 20px;
 }
 
 .big-name {
-  font-size: 1.75em;
-}
-.title-text {
-  color: #436657;
+  font-size: 3.5em;
+  letter-spacing: 0.75rem;
+  width: 100%;
+  color: white;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.name-job h1 {
-  margin-top: auto;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
+.title-text {
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 10px;
+  letter-spacing: 0.25rem;
 }
+/* 
+.name-job h1 {
+  font-size: 4em;
+  width: 100%;
+  color: white;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+} */
 
 .name-rule {
   /* margin: auto; */
@@ -65,18 +107,65 @@
 }
 
 .contact-info {
-  background: #436657;
-  width: 215px;
+  background: rgb(46, 64, 102);
+  width: 100%;
   height: 100%;
-  max-height: 800px;
+  /* max-height: 800px; */
   font-size: 15px;
   color: black;
   text-align: center;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-row-start: 3;
+  grid-template-rows: repeat(4, auto);
+  grid-row-start: 1;
+  grid-row-end: 4;
   margin-bottom: 20px;
-  border-radius: 10px;
+  align-items: flex-start;
+  /* border-radius: 10px; */
+}
+
+.contact-section {
+  padding-top: 40px;
+}
+
+.contact-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.right-heading {
+  color: white;
+  padding-left: 20px;
+  font-family: "Jost", sans-serif;
+  font-size: 1.25rem;
+}
+
+.about-me-text {
+  width: 70%;
+  padding-left: 55px;
+  padding-top: 20px;
+  text-align: left;
+  font-family: "Cabin", sans-serif;
+}
+
+.contact-list {
+  color: white;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  text-align: left;
+  line-height: 2rem;
+  padding: 10px 0 0 55px;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: white;
+  font-family: "Cabin", sans-serif;
+}
+.contact-list a:hover {
+  opacity: 0.8;
 }
 
 .contact-item {
@@ -89,6 +178,9 @@
   justify-content: center;
   color: white;
 }
+.contact-info p {
+  color: white;
+}
 
 .contact-item img {
   margin-bottom: 10px;
@@ -97,6 +189,66 @@
 .contact-item a {
   text-decoration: inherit;
   color: white;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 55px;
+  padding-top: 10px;
+}
+
+.experience-title {
+  font-size: 0.9rem;
+}
+
+.experience-row {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  width: 90%;
+  padding-bottom: 7px;
+  font-family: "Cabin", sans-serif;
+}
+
+.experience-bar {
+  width: 58%;
+  height: 10px;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blue-bar {
+  width: 10%;
+  height: 100%;
+  background: rgb(96, 190, 255);
+}
+
+.html,
+.css,
+.express {
+  width: 55%;
+}
+
+.javascript,
+.react {
+  width: 65%;
+}
+
+.photoshop,
+.sales {
+  width: 78%;
+}
+
+.illustrator {
+  width: 90%;
+}
+
+.disc {
+  width: 25%;
 }
 
 .clickable:hover {
@@ -132,7 +284,7 @@
   display: block;
   width: 100%;
   background-color: #3a3a3a;
-  height: 2px;
+  height: 3px;
 }
 
 @media (max-width: 1024px) {
