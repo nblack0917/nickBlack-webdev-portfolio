@@ -24,12 +24,46 @@ h4 {
   padding-left: 20px;
 }
 
+.download-link {
+  transform: skewY(7deg);
+  margin-top: -200;
+}
+
+.download-button {
+  width: 200px;
+  height: 75px;
+  font-family: "Jost", sans-serif;
+  background-color: rgb(46, 64, 102);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.download-button:hover {
+  opacity: 0.8;
+}
+
+.download-link a {
+  text-decoration: none;
+}
+
+.resume-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .resume-container {
   display: grid;
   grid-template-columns: 325px 25px 1fr 1fr;
   grid-template-rows: 200px auto auto auto auto;
   width: 1000px;
-  height: 1200px;
+  height: auto;
   margin: 40px auto 0;
   transform: skewY(7deg);
   margin-top: -80px;
