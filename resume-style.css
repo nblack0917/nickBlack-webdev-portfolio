@@ -3,7 +3,9 @@
 /* font-family: 'Cabin', sans-serif; */
 /* font-family: 'Jost', sans-serif; */
 
-p {
+p,
+ul,
+h4 {
   font-family: "Cabin", sans-serif;
   font-weight: 400;
   color: rgb(46, 64, 102);
@@ -24,8 +26,8 @@ p {
 
 .resume-container {
   display: grid;
-  grid-template-columns: 325px 25px 1fr;
-  grid-template-rows: 200px 2fr 1fr;
+  grid-template-columns: 325px 25px 1fr 1fr;
+  grid-template-rows: 200px auto auto auto auto;
   width: 1000px;
   height: 1200px;
   margin: 40px auto 0;
@@ -51,6 +53,7 @@ p {
 .name-job {
   grid-row-start: 1;
   grid-column-start: 3;
+  grid-column-end: 5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,9 +102,10 @@ p {
   height: 2px;
 }
 
-.statement {
+.work-history {
   grid-row-start: 2;
   grid-column-start: 3;
+  grid-column-end: 5;
 }
 .statement > h2 {
   margin: 20px 0 10px;
@@ -118,8 +122,8 @@ p {
   display: grid;
   grid-template-rows: repeat(5, auto);
   grid-row-start: 1;
-  grid-row-end: 4;
-  margin-bottom: 20px;
+  grid-row-end: 7;
+  /* margin-bottom: 20px; */
   align-items: flex-start;
   /* border-radius: 10px; */
 }
@@ -133,6 +137,10 @@ p {
   justify-content: flex-start;
   align-items: center;
   padding-left: 30px;
+}
+
+.reference-list {
+  list-style: none;
 }
 
 .right-heading {
@@ -153,18 +161,26 @@ p {
   color: rgb(96, 190, 255);
   padding-left: 20px;
   font-family: "Jost", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .left-date {
   color: rgb(46, 64, 102);
   font-family: "Cabin", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .row-content {
-  padding-left: 40px;
+  padding-left: 30px;
+}
+
+.row-content a {
+  text-decoration: none;
+  color: rgb(46, 64, 102);
+}
+.row-content a:hover {
+  opacity: 0.8;
 }
 
 .row-details {
@@ -192,6 +208,38 @@ p {
   text-align: left;
   line-height: 2rem;
   padding: 10px 0 0 55px;
+}
+
+.hobby {
+  display: flex;
+  align-items: center;
+}
+
+.hobby-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spacer {
+  padding-top: 15px;
+}
+
+.hobby-name {
+  padding-left: 10px;
+}
+
+.fact-list {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .contact-list a {
@@ -290,9 +338,27 @@ p {
   opacity: 0.9;
 }
 
-.resume-info {
+.education-info {
   grid-row-start: 3;
   grid-column-start: 3;
+  grid-column-end: 5;
+}
+.current-projects {
+  padding-right: 15px;
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.references {
+  padding-left: 15px;
+  grid-row-start: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.interesting-info {
+  grid-row-start: 5;
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 .resume-blob {
   margin: 0 auto;
